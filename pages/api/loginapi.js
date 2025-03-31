@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     console.log({ business_name });
 
 
-    const api_key = "5942e421158c4d42b0254a0508bb61df"
+    const api_key = process.env.MERCOA_API_KEY;
     const mercoa_client = new MercoaClient({
         token : api_key
     });
