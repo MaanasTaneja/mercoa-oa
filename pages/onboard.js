@@ -19,7 +19,7 @@ export async function getServerSideProps(context) {
 }
 
 
-export default function onboard({token, entityId}) {
+export default function Onboard({token, entityId}) {
     const router = useRouter();
     const handleOnboardingComplete = () => {
         router.push(`/dashboard?token=${token}&entityId=${entityId}`);
